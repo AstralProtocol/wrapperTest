@@ -1,0 +1,19 @@
+{
+  "name": "testrepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deployGeoDIDs": "truffle exec scripts/deployGeoDIDs.js --network ropsten"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@astralprotocol/contracts": "^0.1.12",
+    "@astralprotocol/core": "^0.1.8",
+    "@truffle/hdwallet-provider": "^1.2.2",
+    "dotenv": "^8.2.0",
+    "truffle": "^5.1.66"
+  }
+}
