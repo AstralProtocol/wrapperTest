@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@astralprotocol/contracts": "^0.1.12",
-    "@astralprotocol/core": "^0.1.8",
+    "@astralprotocol/contracts": "^0.1.13",
+    "@astralprotocol/core": "^0.1.9",
     "@truffle/hdwallet-provider": "^1.2.2",
     "dotenv": "^8.2.0",
     "truffle": "^5.1.66"
