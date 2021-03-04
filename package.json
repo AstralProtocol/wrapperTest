@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@astralprotocol/contracts": "^1.0.5",
-    "@astralprotocol/core": "^1.0.19",
+    "@astralprotocol/core": "^1.0.23",
     "@truffle/hdwallet-provider": "^1.2.2",
     "bs58": "^4.0.1",
     "dotenv": "^8.2.0",
