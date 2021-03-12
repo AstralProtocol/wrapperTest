@@ -25,8 +25,10 @@ module.exports = async function (callback) {
       from: userAccount,
       data: SpatialAssets.deployedBytecode,
     });
+
+    const subgraphEndpoint = "https://api.thegraph.com/subgraphs/name/astralprotocol/spatialassetsv06"
   
-    const astral = new AstralClient(userAccount);
+    const astral = new AstralClient(userAccount, subgraphEndpoint);
   
     const storage = stringToBytes('FILECOIN');
     // Enable a storage first
