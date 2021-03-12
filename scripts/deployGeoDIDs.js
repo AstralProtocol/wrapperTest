@@ -87,7 +87,6 @@ module.exports = async function (callback) {
 
     
     // With the Auth Token and the GeoDID ID we can load the document with the loadDocument function
-
     const loadResults = await astral.loadDocument(results.geodidid, token);
     console.log(loadResults);
 
