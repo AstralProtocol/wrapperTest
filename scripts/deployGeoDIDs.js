@@ -26,7 +26,7 @@ module.exports = async function (callback) {
       data: SpatialAssets.deployedBytecode,
     });
 
-    const subgraphEndpoint = "https://api.thegraph.com/subgraphs/name/astralprotocol/spatialassetsv06"
+    const subgraphEndpoint = "https://api.thegraph.com/subgraphs/name/astralprotocol/spatialassetsv08"
   
     const astral = new AstralClient(userAccount, subgraphEndpoint);
   
