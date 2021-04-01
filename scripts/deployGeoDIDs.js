@@ -26,9 +26,9 @@ module.exports = async function (callback) {
       data: SpatialAssets.deployedBytecode,
     });
 
-    const subgraphEndpoint = "https://api.thegraph.com/subgraphs/name/astralprotocol/spatialassetsv08"
+    const subgraphEndpoint = "https://api.thegraph.com/subgraphs/name/astralprotocol/spatialassetsfinalv1"
   
-    const astral = new AstralClient(userAccount, subgraphEndpoint);
+    const astral = await AstralClient.build(userAccount, subgraphEndpoint);
   
     const storage = stringToBytes('FILECOIN');
     // Enable a storage first
@@ -89,7 +89,7 @@ module.exports = async function (callback) {
 
     
     // With the Auth Token and the GeoDID ID we can load the document with the loadDocument function
-    const loadResults = await astral.loadDocument(results.geodidid, token);
+    const loadResults = await astral.loadDocument(results.geodidid);
     console.log(loadResults);
 
   }
